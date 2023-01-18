@@ -1,9 +1,19 @@
-import { useSelector } from 'react-redux';
-import Content from 'components/Content/Content';
-import Login from 'components/Login/Login';
-import { selectIsLoggedIn } from 'redux/selectors';
+// import { useSelector } from 'react-redux';
+import ContentPage from 'pages/ContentPage/ContentPage';
+// import Login from 'pages/Login/Login';
+// import { selectIsLoggedIn } from 'redux/selectors';
+import { GlobalStyle } from './GlobalStyles';
+import { Wrapper } from './App.styled';
 
 export const App = () => {
-  const isLogIn = useSelector(selectIsLoggedIn);
-  return <div> {isLogIn === false ? <Login /> : <Content />}</div>;
+  // const isLogIn = useSelector(selectIsLoggedIn);
+  return (
+    <>
+      {/* <Wrapper>{isLogIn === false ? <Login /> : <ContentPage />}</Wrapper> */}
+      <Wrapper>
+        <ContentPage />
+      </Wrapper>
+      <GlobalStyle />
+    </>
+  );
 };

@@ -1,9 +1,11 @@
 import { LoginForm } from 'components/LoginForm/LoginForm';
+import { Title, Wrapper } from './Login.styled';
 
 export default function Login() {
   return (
-    <div>
+    <Wrapper>
+      <Title>Log In</Title>
       <LoginForm />
-    </div>
+    </Wrapper>
   );
 }

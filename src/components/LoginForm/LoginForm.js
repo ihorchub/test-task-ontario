@@ -1,7 +1,9 @@
 import * as yup from 'yup';
-import { Field, Formik, Form } from 'formik';
+import { Formik } from 'formik';
 import { useDispatch } from 'react-redux';
 import { UserlogIn } from 'redux/operations';
+import { FormWrapper, Input, Label } from './LoginForm.styled';
+import { ButtonBig } from 'components/ButtonBig/ButtonBig';
 
 const validationSchema = yup.object().shape({
   login: yup.string().required(),
@@ -27,17 +29,17 @@ export const LoginForm = () => {
       validationSchema={validationSchema}
       onSubmit={handleSubmit}
     >
-      <Form>
-        <label>
-          Login
-          <Field type="text" name="login" />
-        </label>
-        <label>
+      <FormWrapper>
+        <Label>
+          Username
+          <Input type="text" name="login" placeholder="example" />
+        </Label>
+        <Label>
           Password
-          <Field type="password" name="password" />
-        </label>
-        <button type="submit">Login</button>
-      </Form>
+          <Input type="password" name="password" placeholder="Your password" />
+        </Label>
+        <ButtonBig type="submit">Login</ButtonBig>
+      </FormWrapper>
     </Formik>
   );
 };
