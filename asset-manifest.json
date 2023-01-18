@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/test-task-ontario/static/css/main.7acaea2f.css",
+    "main.js": "/test-task-ontario/static/js/main.b4592bb6.js",
+    "index.html": "/test-task-ontario/index.html",
+    "main.7acaea2f.css.map": "/test-task-ontario/static/css/main.7acaea2f.css.map",
+    "main.b4592bb6.js.map": "/test-task-ontario/static/js/main.b4592bb6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.b4592bb6.js"
+  ]
+}
