@@ -1,13 +1,13 @@
-import Arrow from 'svg/arrow.svg';
+import { ChevronRight } from 'components/Svg/ChevronRight';
 import { Text, Wrapper } from './Breadcrumbs.styled';
 
 export const Breadcrumbs = () => {
   return (
     <Wrapper>
       <Text>Ontario</Text>
-      <img src={Arrow} alt="" width="16" />
+      <ChevronRight />
       <Text>Toronto</Text>
-      <img src={Arrow} alt="" width="16" />
+      <ChevronRight />
       <Text style={{ color: '#9499A8' }}>22 Sunset Beach Rd</Text>
     </Wrapper>
   );
