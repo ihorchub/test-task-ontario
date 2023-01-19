@@ -1,4 +1,6 @@
 import { useSelector } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import ContentPage from 'pages/ContentPage/ContentPage';
 import Login from 'pages/Login/Login';
 import { selectIsLoggedIn } from 'redux/selectors';
@@ -11,6 +13,7 @@ export const App = () => {
     <>
       <Wrapper>{isLogIn === false ? <Login /> : <ContentPage />}</Wrapper>
       <GlobalStyle />
+      <ToastContainer autoClose={3000} />
     </>
   );
 };

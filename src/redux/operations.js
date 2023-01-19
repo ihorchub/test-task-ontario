@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import { toast } from 'react-toastify';
 
 axios.defaults.baseURL = 'https://dev.api.fundee.io/';
 
@@ -11,7 +12,14 @@ export const UserlogIn = createAsyncThunk(
   'auth/login',
   async (credentials, thunkAPI) => {
     try {
-      const res = await axios.post('/account/login', credentials);
+      const res = await toast.promise(
+        axios.post('/account/login', credentials),
+        {
+          pending: 'Checking the entered data',
+          success: `Welcome, ${credentials.login}, for logging in 👌`,
+          error: 'No user found with this name or password 🤯',
+        }
+      );
       return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
