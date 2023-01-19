@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/test-task-ontario/static/css/main.c3d5249d.css",
-    "main.js": "/test-task-ontario/static/js/main.bed9bd1a.js",
+    "main.js": "/test-task-ontario/static/js/main.2685ca88.js",
+    "static/media/2xhouse.jpg": "/test-task-ontario/static/media/2xhouse.281aa3706401498a03e6.jpg",
     "static/media/2ximg1.jpg": "/test-task-ontario/static/media/2ximg1.f0ae0d93bc6015dd6785.jpg",
     "static/media/2ximg6.jpg": "/test-task-ontario/static/media/2ximg6.f915765462b6cc0583b7.jpg",
     "static/media/2ximg7.jpg": "/test-task-ontario/static/media/2ximg7.eac93e320e62b5a58f12.jpg",
+    "static/media/house.jpg": "/test-task-ontario/static/media/house.40f97b2ab6c9601089b7.jpg",
     "static/media/2ximg10.jpg": "/test-task-ontario/static/media/2ximg10.09600030221e4cff683d.jpg",
     "static/media/2ximg2.jpg": "/test-task-ontario/static/media/2ximg2.693b573fae1d4568d1cd.jpg",
     "static/media/2ximg9.jpg": "/test-task-ontario/static/media/2ximg9.120bfc01cc75b9e83611.jpg",
@@ -17,10 +19,10 @@
     "static/media/img7.jpg": "/test-task-ontario/static/media/img7.626d1a02915c735eceaa.jpg",
     "index.html": "/test-task-ontario/index.html",
     "main.c3d5249d.css.map": "/test-task-ontario/static/css/main.c3d5249d.css.map",
-    "main.bed9bd1a.js.map": "/test-task-ontario/static/js/main.bed9bd1a.js.map"
+    "main.2685ca88.js.map": "/test-task-ontario/static/js/main.2685ca88.js.map"
   },
   "entrypoints": [
     "static/css/main.c3d5249d.css",
-    "static/js/main.bed9bd1a.js"
+    "static/js/main.2685ca88.js"
   ]
 }
