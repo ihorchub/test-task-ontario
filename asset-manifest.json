@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/test-task-ontario/static/css/main.909399a8.css",
-    "main.js": "/test-task-ontario/static/js/main.e68f8436.js",
+    "main.js": "/test-task-ontario/static/js/main.4460e0ff.js",
     "static/media/2xhouse.jpg": "/test-task-ontario/static/media/2xhouse.281aa3706401498a03e6.jpg",
     "static/media/2ximg1.jpg": "/test-task-ontario/static/media/2ximg1.f0ae0d93bc6015dd6785.jpg",
     "static/media/2ximg6.jpg": "/test-task-ontario/static/media/2ximg6.f915765462b6cc0583b7.jpg",
@@ -19,10 +19,10 @@
     "static/media/img7.jpg": "/test-task-ontario/static/media/img7.626d1a02915c735eceaa.jpg",
     "index.html": "/test-task-ontario/index.html",
     "main.909399a8.css.map": "/test-task-ontario/static/css/main.909399a8.css.map",
-    "main.e68f8436.js.map": "/test-task-ontario/static/js/main.e68f8436.js.map"
+    "main.4460e0ff.js.map": "/test-task-ontario/static/js/main.4460e0ff.js.map"
   },
   "entrypoints": [
     "static/css/main.909399a8.css",
-    "static/js/main.e68f8436.js"
+    "static/js/main.4460e0ff.js"
   ]
 }
