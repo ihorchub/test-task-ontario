@@ -17,7 +17,7 @@ export const UserlogIn = createAsyncThunk(
         {
           pending: 'Checking the entered data',
           success: `Welcome, ${credentials.login}, for logging in 👌`,
-          error: 'No user found with this name or password 🤯',
+          error: 'User not found. Try again 🤯',
         }
       );
       return res.data;
