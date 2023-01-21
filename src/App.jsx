@@ -11,6 +11,7 @@ export const App = () => {
   const isLogIn = useSelector(selectIsLoggedIn);
   return (
     <>
+      <h1>Update for node</h1>
       <Wrapper>{isLogIn === false ? <Login /> : <ContentPage />}</Wrapper>
       <GlobalStyle />
       <ToastContainer autoClose={3000} />
