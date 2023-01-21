@@ -15,6 +15,17 @@ export const Label = styled.label`
   :first-child {
     margin-bottom: 20px;
   }
+
+  /* ::before {
+    content: ' ';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-image: <Canada/>;
+    background-repeat: no-repeat;
+    background-position: 0px 0px; /* position of the right icon */
+  } */
+  /* position: relative; */
 `;
 
 export const Input = styled(Field)`
