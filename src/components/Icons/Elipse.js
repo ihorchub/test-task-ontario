@@ -1,7 +1,7 @@
 export const Elipse = () => {
   return (
     <svg
-      width="9"
+      width="8"
       height="8"
       viewBox="0 0 9 8"
       fill="none"
