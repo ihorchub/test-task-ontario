@@ -28,7 +28,7 @@ export const Modal = ({ onClose }) => {
       </Formik>
       <SecondaryText>
         You can change the type and frequency of notifications you receive
-        within your notification settings.{' '}
+        within your notification settings.
       </SecondaryText>
     </BaseModal>
   );

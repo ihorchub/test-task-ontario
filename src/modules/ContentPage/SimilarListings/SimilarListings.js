@@ -13,7 +13,7 @@ import {
   Title,
   Wrapper,
 } from './SimilarListings.styled';
-import { items } from 'modules/ContentPage/components/SimilarListings/ProductCardItems';
+import { items } from 'modules/ContentPage/SimilarListings/ProductCardItems';
 
 export const SimilarListings = () => {
   return (

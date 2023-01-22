@@ -1,8 +1,8 @@
 import { Button } from './ButtonMedium.styled';
 
-export const ButtonMedium = ({ link, width, children }) => {
+export const ButtonMedium = ({ onClick, as, href, link, width, children }) => {
   return (
-    <Button link={link} width={width}>
+    <Button onClick={onClick} as={as} href={href} link={link} width={width}>
       {children}
     </Button>
   );

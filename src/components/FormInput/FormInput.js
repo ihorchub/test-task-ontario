@@ -1,10 +1,10 @@
 import { Input, Label } from './FormInput.styled';
 
-export const FormInput = ({ children, type, placeholder, icon }) => {
+export const FormInput = ({ name, type, placeholder, icon, children }) => {
   return (
     <Label>
       {children}
-      <Input icon={icon} type={type} placeholder={placeholder} />
+      <Input icon={icon} name={name} type={type} placeholder={placeholder} />
     </Label>
   );
 };

@@ -1,5 +1,9 @@
 import { Button } from './ButtonBig.styled';
 
-export const ButtonBig = ({ width, children }) => {
-  return <Button width={width}>{children}</Button>;
+export const ButtonBig = ({ onClick, type, width, children }) => {
+  return (
+    <Button onClick={onClick} type={type} width={width}>
+      {children}
+    </Button>
+  );
 };

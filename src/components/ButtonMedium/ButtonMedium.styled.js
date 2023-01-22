@@ -27,4 +27,6 @@ export const Button = styled.button`
   line-height: 1.19;
 
   color: #ffffff;
+
+  text-decoration: none;
 `;

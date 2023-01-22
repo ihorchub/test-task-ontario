@@ -1,10 +1,9 @@
 import { Wrapper } from './Gallery.styled';
-import { galleryItems } from './galleryItems';
 
-export const Gallery = () => {
+export const Gallery = ({ items }) => {
   return (
     <Wrapper>
-      {galleryItems.map(({ id, x1, x2, alt }) => (
+      {items.map(({ id, x1, x2, alt }) => (
         <li key={id}>
           <img
             srcSet={`${process.env.PUBLIC_URL + x1} 1x, ${
