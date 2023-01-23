@@ -1,14 +1,14 @@
-import { BaseModal } from 'components/BaseModal/BaseModal';
-import { ButtonBig } from 'components/ButtonBig/ButtonBig';
+import styled from 'styled-components';
+import { Form, Formik } from 'formik';
+import PopupLayout from 'layouts/PopupLayout';
+import Button from 'components/Button/Button';
 import { FormInput } from 'components/FormInput/FormInput';
 import { Canada } from 'components/Icons/Canada';
 import { Title } from 'components/Title/Title';
-import { Form, Formik } from 'formik';
-import { ButtonPosition, Flag, MainText, SecondaryText } from './Modal.styled';
 
-export const Modal = ({ onClose }) => {
+const ContactYouSoon = ({ onClose }) => {
   return (
-    <BaseModal onClose={onClose}>
+    <PopupLayout onClose={onClose}>
       <Title>Let us contact you soon!</Title>
       <MainText>
         You’ll get emails when homes that match your search hit the market.
@@ -30,12 +30,50 @@ export const Modal = ({ onClose }) => {
             within your notification settings.
           </SecondaryText>
           <ButtonPosition>
-            <ButtonBig type="submit" width="165px">
+            <Button variant="primary" type="submit" width="165px">
               Continue
-            </ButtonBig>
+            </Button>
           </ButtonPosition>
         </Form>
       </Formik>
-    </BaseModal>
+    </PopupLayout>
   );
 };
+
+const MainText = styled.p`
+  margin-top: 20px;
+  margin-bottom: 24px;
+
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #202a44;
+`;
+
+const SecondaryText = styled.p`
+  margin-top: 16px;
+  margin-bottom: 29px;
+
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  color: #202a44;
+`;
+
+const Flag = styled.span`
+  position: absolute;
+  display: flex;
+  left: 24px;
+  bottom: 18px;
+`;
+
+const ButtonPosition = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export default ContactYouSoon;

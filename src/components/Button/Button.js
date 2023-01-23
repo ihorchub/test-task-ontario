@@ -1,11 +1,37 @@
 import styled from 'styled-components';
 
-export const Button = styled.button`
+const Button = ({
+  variant,
+  onClick,
+  type,
+  as,
+  href,
+  link,
+  width,
+  children,
+}) => {
+  return (
+    <Wrapper
+      variant={variant}
+      onClick={onClick}
+      type={type}
+      as={as}
+      href={href}
+      link={link}
+      width={width}
+    >
+      {children}
+    </Wrapper>
+  );
+};
+
+const Wrapper = styled.button`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 8px 16px 9px;
+  padding: ${props =>
+    props.variant === 'primary' ? '11px 16px 12px' : '8px 16px 9px'};
   gap: 10px;
 
   cursor: pointer;
@@ -25,8 +51,9 @@ export const Button = styled.button`
   font-weight: 700;
   font-size: 16px;
   line-height: 1.19;
+  text-decoration: none;
 
   color: #ffffff;
-
-  text-decoration: none;
 `;
+
+export default Button;

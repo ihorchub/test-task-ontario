@@ -4,8 +4,8 @@ import { useDispatch } from 'react-redux';
 import { UserlogIn } from 'redux/operations';
 import { Title } from 'components/Title/Title';
 import { FormInput } from 'components/FormInput/FormInput';
-import { ButtonBig } from 'components/ButtonBig/ButtonBig';
 import { InputWrapper, Wrapper } from './Login.styled';
+import Button from 'components/Button/Button';
 
 const validationSchema = yup.object().shape({
   login: yup.string().required(),
@@ -45,9 +45,9 @@ export default function Login() {
               Password
             </FormInput>
           </InputWrapper>
-          <ButtonBig type="submit" width="76px">
+          <Button variant="primary" type="submit" width="76px">
             Log In
-          </ButtonBig>
+          </Button>
         </Form>
       </Formik>
     </Wrapper>

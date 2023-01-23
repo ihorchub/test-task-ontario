@@ -1,4 +1,4 @@
-import { similarProductCard } from 'data/produktParams';
+import { similarProductCard } from 'mocks/produktParams';
 
 export const items = [
   {

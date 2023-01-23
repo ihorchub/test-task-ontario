@@ -1,4 +1,4 @@
-import { ButtonMedium } from 'components/ButtonMedium/ButtonMedium';
+import Button from 'components/Button/Button';
 import { ParametersCollection } from 'components/ParametersCollection/ParametersCollection';
 import {
   Address,
@@ -11,30 +11,32 @@ import {
   PriceWrapper,
 } from './ProductCard.styled';
 
-export const ProductCard = ({ card }) => {
+export const ProductCard = ({
+  card: { img, price, listed, details, adress, number, sqrt },
+}) => {
   return (
     <CardWrapper>
       <ButtonPosition>
-        <ButtonMedium width="169px">10 wishes matched</ButtonMedium>
+        <Button width="169px">10 wishes matched</Button>
       </ButtonPosition>
       <img
-        srcSet={`${process.env.PUBLIC_URL + card.img.x1} 1x, ${
-          process.env.PUBLIC_URL + card.img.x2
+        srcSet={`${process.env.PUBLIC_URL + img.x1} 1x, ${
+          process.env.PUBLIC_URL + img.x2
         } 2x`}
-        src={process.env.PUBLIC_URL + card.img.x1}
-        alt={card.img.alt}
+        src={process.env.PUBLIC_URL + img.x1}
+        alt={img.alt}
       />
       <PriceWrapper>
-        <Price>{card.price}</Price>
-        <Listed>{card.listed}</Listed>
+        <Price>{price}</Price>
+        <Listed>{listed}</Listed>
       </PriceWrapper>
-      <ParametersCollection card collection={card.details} />
+      <ParametersCollection card collection={details} />
       <AddressWrapper>
-        <Address>{card.adress}</Address>
-        <Accent>{card.number}</Accent>
+        <Address>{adress}</Address>
+        <Accent>{number}</Accent>
       </AddressWrapper>
 
-      <Accent>{card.sqrt}</Accent>
+      <Accent>{sqrt}</Accent>
     </CardWrapper>
   );
 };
