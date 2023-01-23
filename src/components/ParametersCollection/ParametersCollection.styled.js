@@ -9,7 +9,7 @@ export const Wrapper = styled.span`
 export const ItemWrapper = styled.span`
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: ${props => (props.card ? '4px' : '8px')};
 `;
 
 export const Text = styled.span`

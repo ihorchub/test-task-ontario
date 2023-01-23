@@ -1,4 +1,4 @@
-import { produktPageParams } from 'data/produktPageParams';
+import { produktPageParams } from 'data/produktParams';
 
 export const houseDetails = {
   listed: 'Listed 5 days ago',

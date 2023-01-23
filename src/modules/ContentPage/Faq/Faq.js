@@ -9,7 +9,7 @@ import {
   Title,
   Wrapper,
 } from './Faq.styled';
-import { elements } from './FaqElements';
+import { elements } from 'data/FaqElements';
 
 export const Faq = () => {
   const [itemId, setItemId] = useState('');

@@ -6,6 +6,7 @@ import { galleryItems } from 'data/galleryItems';
 import { houseDetails } from 'data/houseDetailsTemplate';
 import { HouseDetails } from 'components/HouseDetails/HouseDetails';
 import { DescriptionHouse } from './ContentPage.styled';
+import { items } from 'data/ProductCardItems';
 
 const Content = () => {
   return (
@@ -15,7 +16,7 @@ const Content = () => {
         <Gallery items={galleryItems} />
       </DescriptionHouse>
       <HouseDetails details={houseDetails} />
-      <SimilarListings />
+      <SimilarListings items={items} />
       <Faq />
     </>
   );

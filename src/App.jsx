@@ -11,6 +11,8 @@ export const App = () => {
   const isLogIn = useSelector(selectIsLoggedIn);
   return (
     <>
+      {/* <Wrapper>        
+      </Wrapper> */}
       <Wrapper>{isLogIn === false ? <Login /> : <ContentPage />}</Wrapper>
       <GlobalStyle />
       <ToastContainer autoClose={3000} />
