@@ -7,6 +7,7 @@ import { houseDetails } from 'data/houseDetailsTemplate';
 import { HouseDetails } from 'components/HouseDetails/HouseDetails';
 import { DescriptionHouse } from './ContentPage.styled';
 import { items } from 'data/ProductCardItems';
+import { elements } from 'data/FaqElements';
 
 const Content = () => {
   return (
@@ -17,7 +18,7 @@ const Content = () => {
       </DescriptionHouse>
       <HouseDetails details={houseDetails} />
       <SimilarListings items={items} />
-      <Faq />
+      <Faq elements={elements} />
     </>
   );
 };

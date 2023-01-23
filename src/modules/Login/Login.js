@@ -3,9 +3,9 @@ import { Formik, Form } from 'formik';
 import { useDispatch } from 'react-redux';
 import { UserlogIn } from 'redux/operations';
 import { Title } from 'components/Title/Title';
-import { InputWrapper, Wrapper } from './Login.styled';
 import { FormInput } from 'components/FormInput/FormInput';
 import { ButtonBig } from 'components/ButtonBig/ButtonBig';
+import { InputWrapper, Wrapper } from './Login.styled';
 
 const validationSchema = yup.object().shape({
   login: yup.string().required(),

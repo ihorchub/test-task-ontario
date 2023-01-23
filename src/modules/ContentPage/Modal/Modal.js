@@ -1,8 +1,10 @@
 import { BaseModal } from 'components/BaseModal/BaseModal';
+import { ButtonBig } from 'components/ButtonBig/ButtonBig';
 import { FormInput } from 'components/FormInput/FormInput';
 import { Canada } from 'components/Icons/Canada';
+import { Title } from 'components/Title/Title';
 import { Form, Formik } from 'formik';
-import { Button, Flag, MainText, SecondaryText, Title } from './Modal.styled';
+import { ButtonPosition, Flag, MainText, SecondaryText } from './Modal.styled';
 
 export const Modal = ({ onClose }) => {
   return (
@@ -23,13 +25,17 @@ export const Modal = ({ onClose }) => {
               <Canada />
             </Flag>
           </FormInput>
-          <Button type="submit">Continue</Button>
+          <SecondaryText>
+            You can change the type and frequency of notifications you receive
+            within your notification settings.
+          </SecondaryText>
+          <ButtonPosition>
+            <ButtonBig type="submit" width="165px">
+              Continue
+            </ButtonBig>
+          </ButtonPosition>
         </Form>
       </Formik>
-      <SecondaryText>
-        You can change the type and frequency of notifications you receive
-        within your notification settings.
-      </SecondaryText>
     </BaseModal>
   );
 };

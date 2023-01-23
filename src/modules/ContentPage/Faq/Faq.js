@@ -1,41 +1,18 @@
-import { ChevronDown } from 'components/Icons/ChevronDown';
-import { ChevronUp } from 'components/Icons/ChevronUp';
-import { useState } from 'react';
-import {
-  Answer,
-  ItemWrapper,
-  Question,
-  QuestionWrapper,
-  Title,
-  Wrapper,
-} from './Faq.styled';
-import { elements } from 'data/FaqElements';
+import { Qa } from 'components/Qa/Qa';
+import { Title } from 'components/Title/Title';
+import { Item, ListWrapper, Wrapper } from './Faq.styled';
 
-export const Faq = () => {
-  const [itemId, setItemId] = useState('');
-
-  const handleClick = e => {
-    const selectQuestion = e.currentTarget.id;
-    if (selectQuestion === itemId) {
-      return setItemId('');
-    }
-    setItemId(e.currentTarget.id);
-  };
-
+export const Faq = ({ elements }) => {
   return (
     <Wrapper>
-      <Title>Frequently Asked Questions</Title>
-      <ul>
-        {elements.map(({ id, question, answer }) => (
-          <ItemWrapper key={id}>
-            <QuestionWrapper id={id} onClick={handleClick}>
-              <Question>{question}</Question>
-              {itemId === id ? <ChevronUp /> : <ChevronDown />}
-            </QuestionWrapper>
-            {itemId === id && <Answer>{answer}</Answer>}
-          </ItemWrapper>
+      <Title questions>Frequently Asked Questions</Title>
+      <ListWrapper>
+        {elements.map(element => (
+          <Item key={element.id}>
+            <Qa element={element} />
+          </Item>
         ))}
-      </ul>
+      </ListWrapper>
     </Wrapper>
   );
 };
