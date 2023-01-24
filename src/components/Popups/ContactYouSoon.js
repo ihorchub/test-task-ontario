@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { Form, Formik } from 'formik';
 import PopupLayout from 'layouts/PopupLayout';
 import Button from 'components/Button/Button';
-import { FormInput } from 'components/FormInput/FormInput';
-import { Canada } from 'components/Icons/Canada';
-import { Title } from 'components/Title/Title';
+import FormInput from 'components/FormInput/FormInput';
+import { Canada } from 'components/Icons/Icons';
+import Title from 'components/Title/Title';
 
 const ContactYouSoon = ({ onClose }) => {
   return (

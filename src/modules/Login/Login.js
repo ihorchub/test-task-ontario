@@ -1,10 +1,10 @@
+import styled from 'styled-components';
 import * as yup from 'yup';
 import { Formik, Form } from 'formik';
 import { useDispatch } from 'react-redux';
 import { UserlogIn } from 'redux/operations';
-import { Title } from 'components/Title/Title';
-import { FormInput } from 'components/FormInput/FormInput';
-import { InputWrapper, Wrapper } from './Login.styled';
+import Title from 'components/Title/Title';
+import FormInput from 'components/FormInput/FormInput';
 import Button from 'components/Button/Button';
 
 const validationSchema = yup.object().shape({
@@ -17,7 +17,7 @@ const initialValues = {
   password: '',
 };
 
-export default function Login() {
+const Login = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = ({ login, password }, { resetForm }) => {
@@ -52,4 +52,23 @@ export default function Login() {
       </Formik>
     </Wrapper>
   );
-}
+};
+
+const Wrapper = styled.div`
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+const InputWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin-top: 26px;
+  margin-bottom: 35px;
+`;
+
+export default Login;

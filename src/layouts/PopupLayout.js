@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useEffect } from 'react';
-import { X } from 'components/Icons/X';
+import { X } from 'components/Icons/Icons';
 
 const PopupLayout = ({ onClose, children }) => {
   useEffect(() => {

@@ -4,9 +4,8 @@ export const items = [
   {
     id: '1',
     img: {
-      x1: '/images/SimilarListings/house.jpg',
-      x2: '/images/SimilarListings/2xhouse.jpg',
-      alt: 'house',
+      src: '/images/SimilarListings/home.png',
+      alt: 'home',
     },
     price: '$629,000',
     listed: 'Listed 2 days ago',
@@ -18,9 +17,8 @@ export const items = [
   {
     id: '2',
     img: {
-      x1: '/images/SimilarListings/house.jpg',
-      x2: '/images/SimilarListings/2xhouse.jpg',
-      alt: 'house',
+      src: '/images/SimilarListings/home.png',
+      alt: 'home',
     },
     price: '$629,000',
     listed: 'Listed 2 days ago',

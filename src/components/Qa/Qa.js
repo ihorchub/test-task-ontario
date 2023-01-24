@@ -1,9 +1,9 @@
+import styled from 'styled-components';
 import { useState } from 'react';
-import { ChevronDown } from 'components/Icons/ChevronDown';
-import { ChevronUp } from 'components/Icons/ChevronUp';
-import { Answer, Question, QuestionWrapper } from './Qa.styled';
+import { ChevronDown } from 'components/Icons/Icons';
+import { ChevronUp } from 'components/Icons/Icons';
 
-export const Qa = ({ element: { id, question, answer } }) => {
+const Qa = ({ element: { id, question, answer } }) => {
   const [itemId, setItemId] = useState('');
 
   const handleClick = e => {
@@ -24,3 +24,32 @@ export const Qa = ({ element: { id, question, answer } }) => {
     </>
   );
 };
+
+const QuestionWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+`;
+
+const Question = styled.p`
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #202a44;
+`;
+
+const Answer = styled.p`
+  padding-top: 16px;
+
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #202a44;
+`;
+
+export default Qa;

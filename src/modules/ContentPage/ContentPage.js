@@ -1,15 +1,15 @@
-import { Gallery } from 'components/Gallery/Gallery';
-import { Breadcrumbs } from 'modules/ContentPage/Breadcrumbs/Breadcrumbs';
-import { Faq } from 'modules/ContentPage/Faq/Faq';
-import { SimilarListings } from 'modules/ContentPage/SimilarListings/SimilarListings';
+import styled from 'styled-components';
+import Gallery from 'components/Gallery/Gallery';
+import Breadcrumbs from 'modules/ContentPage/Breadcrumbs';
+import Faq from 'modules/ContentPage/Faq';
+import SimilarListings from 'modules/ContentPage/SimilarListings';
 import { galleryItems } from 'mocks/galleryItems';
 import { houseDetails } from 'mocks/houseDetailsTemplate';
-import { HouseDetails } from 'components/HouseDetails/HouseDetails';
-import { DescriptionHouse } from './ContentPage.styled';
 import { items } from 'mocks/ProductCardItems';
 import { elements } from 'mocks/FaqElements';
+import HouseDetails from 'components/HouseDetails/HouseDetails';
 
-const Content = () => {
+const ContentPage = () => {
   return (
     <>
       <Breadcrumbs />
@@ -23,4 +23,9 @@ const Content = () => {
   );
 };
 
-export default Content;
+const DescriptionHouse = styled.div`
+  margin-top: 24px;
+  margin-bottom: 41px;
+`;
+
+export default ContentPage;
