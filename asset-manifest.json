@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/test-task-ontario/static/css/main.909399a8.css",
-    "main.js": "/test-task-ontario/static/js/main.9f8e2538.js",
+    "main.js": "/test-task-ontario/static/js/main.de3962d4.js",
     "index.html": "/test-task-ontario/index.html",
     "main.909399a8.css.map": "/test-task-ontario/static/css/main.909399a8.css.map",
-    "main.9f8e2538.js.map": "/test-task-ontario/static/js/main.9f8e2538.js.map"
+    "main.de3962d4.js.map": "/test-task-ontario/static/js/main.de3962d4.js.map"
   },
   "entrypoints": [
     "static/css/main.909399a8.css",
-    "static/js/main.9f8e2538.js"
+    "static/js/main.de3962d4.js"
   ]
 }
